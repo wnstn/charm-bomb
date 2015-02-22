@@ -1,0 +1,14 @@
+{
+  "name": "charm-bomb",
+  "version": "1.0.0",
+  "description": "a super fast single page portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Winston Hearn",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
+}
