@@ -1,0 +1,36 @@
+<script>
+  if (console) {
+    console.log("Not much to see here.")
+    console.log("")
+    console.log("But I do appreciate you checking!")
+    console.log("-Winston")
+  }
+</script>
+
+
+<script>
+  var loadTime = 0;
+
+  if (loadTimeStart) {
+    window.addEventListener("load", function (e) {
+      loadTime = e.timeStamp - loadTimeStart;
+      logEvent();
+    });
+  } else {
+    logEvent();
+  }
+
+  function logEvent() {
+    var visit = {
+      page: "Winston.cc",
+      referrer: document.referrer,
+      width: window.outerWidth,
+      loadTime: loadTime,
+      keen: {
+        timestamp: new Date().toISOString()
+      }
+    }
+
+    Keen.addEvent('visit', visit);
+  }
+</script>

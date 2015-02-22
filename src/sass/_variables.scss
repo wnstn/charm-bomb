@@ -1,0 +1,33 @@
+$base-value: 16;
+
+$tablet: new-breakpoint(min-width 490px 12);
+$tablet-wide: new-breakpoint(min-width 800px 12);
+$desktop: new-breakpoint(min-width 1025px 12);
+
+/* TYPOGRAPHY */
+
+$serif-font: "chaparral-pro-display",serif; // weights: 300
+$sans-serif-font: "brandon-grotesque", sans-serif; // weights: 900
+
+$base-font-family: $serif-font;
+$header-font-family: $sans-serif-font;
+$header-font-weight: 900;
+
+$base-font-size: em(20, $base-value);
+$base-line-height: em(24, $base-value);
+
+/* COLORS */
+
+$blue: #2495ba;
+$darkBlue: #244c59;
+$red: #a93d20;
+$green: #c3e85f;
+
+
+$black:         #000;
+$gray-darker:   #222;
+$gray-dark:     #333;
+$gray:          #555;
+$gray-light:    #999;
+$gray-lighter:  #eee;
+$white:         #fff;

@@ -2,6 +2,7 @@
   "name": "charm-bomb",
   "version": "1.0.0",
   "description": "a super fast single page portfolio page",
+  "repository": "https://github.com/wnstn/charm-bomb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +10,10 @@
   "author": "Winston Hearn",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "gulp-file-includer": "^1.0.0",
+    "gulp-inline-base64": "^0.1.4",
+    "gulp-markdown": "^1.0.0",
+    "gulp-sass": "^1.3.3"
   }
 }

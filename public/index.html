@@ -1,0 +1,305 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Let me tell you about my code</title>
+<meta name="description" content="Winston Hearn is a Front-end Engineer based in Chattanooga, TN"/>
+<meta name="author" content="Winston Hearn">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script> var loadTimeStart = new Date(); </script>
+<!-- ### Stylesheets ### -->
+
+<script src="//use.typekit.net/htq7fpv.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+<script type="text/javascript">
+  var Keen=Keen||{configure:function(e){this._cf=e},addEvent:function(e,t,n,i){this._eq=this._eq||[],this._eq.push([e,t,n,i])},setGlobalProperties:function(e){this._gp=e},onChartsReady:function(e){this._ocrq=this._ocrq||[],this._ocrq.push(e)}};(function(){var e=document.createElement("script");e.type="text/javascript",e.async=!0,e.src=("https:"==document.location.protocol?"https://":"http://")+"dc8na2hxrj29i.cloudfront.net/code/keen-2.1.0-min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})();
+
+  // Configure the Keen object with your Project ID and (optional) access keys.
+  Keen.configure({
+      projectId: "533fb25700111c763d000005",
+      writeKey: "5fbc1787bb1f0893c09eeadae205d8e53c5be58d693b8c59b0bef9ea38f443f27e437676bd3bac95bac01b23fef16ad1f865c0abf5bace0b0e71886a8f7d070e369315fbe744bb09b1f3c0a3f26d6f0a59f306fb3188378076bd8056a75a576895ff252e918b3d971c97a660c0210bd1", // required for sending events
+      readKey: "c6cbbfbc514235cfcafaa1d207395c96b5c604fb68b59ba155df4f123c12d0af82ac2f15fba4479b8d19e5e54e9cac1de535f5d1e8c7a325febf04f0be10e326ae09f896857f4f7d24744d32fa2b875bde9e15df7360b592044e1c9e01c2b0aa702bdec7e4edf0c72d1a4dc9c9117849"    // required for doing analysis
+  });
+</script>
+
+
+    <style type="text/css">
+      article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block; }
+
+audio, canvas, video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden], template {
+  display: none; }
+
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, button, input, select, textarea {
+  font-family: sans-serif; }
+
+body {
+  margin: 0; }
+
+a {
+  background: transparent; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0; }
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0; }
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0; }
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0; }
+
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b, strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word; }
+
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+small {
+  font-size: 80%; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 0; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline; }
+
+button, input {
+  line-height: normal; }
+
+button, select {
+  text-transform: none; }
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled], input[disabled] {
+  cursor: default; }
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* TYPOGRAPHY */
+/* COLORS */
+html {
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../svg/background.svg);
+  height: 100%; }
+
+body {
+  color: #333;
+  font-family: "chaparral-pro-display", serif;
+  font-size: em(20, 16);
+  font-weight: 400;
+  line-height: em(24, 16);
+  -webkit-font-smoothing: subpixel-antialiased; }
+
+h1, h2, h3, h4 {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 3em; }
+
+h2 {
+  font-size: 2.4em; }
+
+h3 {
+  font-size: 1.8em; }
+
+h4 {
+  font-size: 1.4em; }
+
+p {
+  line-height: 1.3em; }
+
+a, a:active, a:link, a:visited, a:hover {
+  text-decoration: none;
+  color: #86ae19; }
+
+#greeting {
+  text-align: center; }
+  @media  (min-width: new-breakpoint(min-width 800px 12)) {
+    #greeting {
+      margin-top: 50px; } }
+  #greeting h3 {
+    color: #2495ba;
+    text-shadow: 2px 1px 0px rgba(51, 51, 51, 0.5); }
+    @media  (min-width: new-breakpoint(min-width 800px 12)) {
+      #greeting h3 {
+        text-shadow: none; } }
+
+.copy {
+  background-color: #fff;
+  font-size: 1.3rem;
+  color: #626262;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3em;
+  text-align: left;
+  padding: 2em; }
+
+    </style>
+  </head>
+
+  <body class="home">
+    <section id="greeting">
+      <h1 id="hello">Hello</h1>
+<h3 id="i-m-winston-">I&#39;m Winston.</h3>
+<p>I&#39;m a Front End Developer working remotely for <a href="http://voxmedia.com">in Chattanooga, TN</a></p>
+<p>Recently, I helped build the <a href="http://press.fiftythree.com">FiftyThree Press Page</a> , worked as a QA engineer for <a href="http://editorially.com">Editorially</a> (RIP), and helped launch the fully-responsive, user-friendly 2.0 update to <a href="http://foxycart.com">FoxyCart</a>, all while traveling the country with my wife and son.</p>
+<p>I blog at <a href="http://winstonhearn.com">winstonhearn.com</a>, I&#39;m on Github as <a href="https://github.com/wnstn/">wnstn</a>, I tweet at <a href="@suchwinston">https://twitter.com/suchwinston</a> (but I&#39;m really annoying), and if all else fails you can email me <a href="mailto:hello@wnstn.com">here.</a></p>
+
+    </section>
+    <script>
+  if (console) {
+    console.log("Not much to see here.")
+    console.log("")
+    console.log("But I do appreciate you checking!")
+    console.log("-Winston")
+  }
+</script>
+
+
+<script>
+  var loadTime = 0;
+
+  if (loadTimeStart) {
+    window.addEventListener("load", function (e) {
+      loadTime = e.timeStamp - loadTimeStart;
+      logEvent();
+    });
+  } else {
+    logEvent();
+  }
+
+  function logEvent() {
+    var visit = {
+      page: "Winston.cc",
+      referrer: document.referrer,
+      width: window.outerWidth,
+      loadTime: loadTime,
+      keen: {
+        timestamp: new Date().toISOString()
+      }
+    }
+
+    Keen.addEvent('visit', visit);
+  }
+</script>
+
+  </body>
+</html>
