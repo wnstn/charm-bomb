@@ -8,7 +8,7 @@ var htmlmin = require('gulp-html-minifier');
 var runSequence = require('run-sequence');
  
 gulp.task('minify', function() {
-  gulp.src('./tmp/*.html')
+  gulp.src('./src/tmp/index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./public'))
 });
@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 gulp.task('fileincluder', function() {
   gulp.src(['./src/index.html'])
     .pipe(fileincluder())
-    .pipe(gulp.dest('./tmp/'));
+    .pipe(gulp.dest('./src/tmp/'));
 });
 
 gulp.task('automate', function(){
