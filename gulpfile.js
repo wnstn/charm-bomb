@@ -2,7 +2,16 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var markdown = require('gulp-markdown');
 var fileincluder = require('gulp-file-includer');
-inline_base64 = require('gulp-inline-base64');
+var cssBase64 = require('gulp-css-base64');
+var minifyCSS = require('gulp-minify-css');
+var htmlmin = require('gulp-html-minifier');
+var runSequence = require('run-sequence');
+ 
+gulp.task('minify', function() {
+  gulp.src('./tmp/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('./public'))
+});
 
 gulp.task('markdown', function () {
   return gulp.src('./src/content/*.md')
@@ -13,23 +22,28 @@ gulp.task('markdown', function () {
 gulp.task('sass', function () {
   gulp.src('./src/sass/*.scss')
     .pipe(sass())
-    .pipe(inline_base64({
-        baseDir: 'path_src',
-        debug: true
+    .pipe(cssBase64({
+      extensionsAllowed: ['.svg']
     }))
+    .pipe(minifyCSS())
     .pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('fileincluder', function() {
   gulp.src(['./src/index.html'])
     .pipe(fileincluder())
-    .pipe(gulp.dest('./public/'));
+    .pipe(gulp.dest('./tmp/'));
 });
 
 gulp.task('automate', function(){
   gulp.watch('./src/sass/*.scss', ['sass']);
-  gulp.watch('./src/content/*.md', ['markdown', 'buildBody']);
-  gulp.watch('./src/templates/*.html', ['fileincluder']);
+  gulp.watch('./src/content/*.md', ['markdown']);
+  gulp.watch('./src/templates/*.html', ['fileincluder', 'minify']);
 })
 
-gulp.task('default', ['markdown', 'sass','fileincluder']);
+gulp.task('default', function(cb) {
+  runSequence('markdown',
+    ['sass', 'fileincluder', 'minify'],
+    'automate',
+    cb);
+});
