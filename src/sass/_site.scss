@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-attachment: fixed; 
   background-size:cover; 
@@ -17,6 +21,8 @@ body {
 h1, h2, h3, h4 {
   font-family: $header-font-family;
   font-weight: $header-font-weight;
+  margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -40,14 +46,19 @@ a:hover {
 
 
 #greeting {
+  margin-top: 50px;
   text-align: center;
+  width: 100%;
 
-  @include breakpoint($tablet-wide) {
-    margin-top: 50px;
+  h1 {
+  font-size: 4rem;    
+  line-height: 3.6rem;
   }
 
-  h3 {
+  h2 {
     color: $blue;
+    line-height: 3rem;
+    margin-bottom: 1rem;
     text-shadow:  2px 1px 0px rgba($gray-dark, .5);
 
     @include breakpoint($tablet-wide) {
@@ -56,18 +67,19 @@ a:hover {
   }
 }
 
-.copy {
-  background-color: $white;
+.body {
+  background-color: rgba($white, .7);
   font-size: 1.3rem;
   color: lighten($gray, 5%);
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 3em;
+  padding: 1em;
   text-align: left;
-  padding: 2em;
 
   @include breakpoint($tablet-wide) {
-    // make it half width
+    max-width: 600px;
+    margin-bottom: 3em;
 
+    padding: 2em;
   }
 }

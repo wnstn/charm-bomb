@@ -38,7 +38,7 @@ gulp.task('serve', ['sass'], function() {
 
   gulp.watch("./src/sass/*.scss", ['sass']);
   gulp.watch('./src/content/*.md', ['markdown']);
-  gulp.watch('./src/templates/*.html', ['buildpage']);
+  gulp.watch(['./src/templates/*.html', './src/css/*css'], ['buildpage']);
   gulp.watch("public/*.html").on('change', reload);
 });
 

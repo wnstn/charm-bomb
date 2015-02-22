@@ -1,8 +1,8 @@
 $base-value: 16;
 
-$tablet: new-breakpoint(min-width 490px 12);
-$tablet-wide: new-breakpoint(min-width 800px 12);
-$desktop: new-breakpoint(min-width 1025px 12);
+$tablet: min-width 490px;
+$tablet-wide: min-width 800px;
+$desktop: min-width 1025px;
 
 /* TYPOGRAPHY */
 

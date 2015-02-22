@@ -1,10 +1,11 @@
 # Hello
-### I'm Winston.
+## I'm Winston.
 
-I'm a Front End Developer working remotely for [in Chattanooga, TN](http://voxmedia.com)
+<div class="body">
 
-Recently, I helped build the [FiftyThree Press Page](http://press.fiftythree.com) , worked as a QA engineer for [Editorially](http://editorially.com) (RIP), and helped launch the fully-responsive, user-friendly 2.0 update to [FoxyCart](http://foxycart.com), all while traveling the country with my wife and son.
+I'm a Front End Developer working remotely for [Vox Media](http://voxmedia.com) in Chattanooga, TN.
 
-I blog at [winstonhearn.com](http://winstonhearn.com), I'm on Github as [wnstn](https://github.com/wnstn/), I tweet at [https://twitter.com/suchwinston](@suchwinston) (but I'm really annoying), and if all else fails you can email me <a href="mailto:hello@wnstn.com">here.</a>
+Previously, I helped build the [FiftyThree Press Page](http://press.fiftythree.com) , worked as a QA engineer for [Editorially](http://editorially.com) (RIP), and helped launch the fully-responsive, user-friendly 2.0 update to [FoxyCart](http://foxycart.com), all while traveling the country with my wife and son.
 
-I'm so glad you're alive.
+I blog at [winstonhearn.com](http://winstonhearn.com), I'm on Github as [wnstn](https://github.com/wnstn/), I tweet at [@suchwinston](https://twitter.com/suchwinston) (be forewarned that I'm obnoxious), and if you need to send me substantial information you can do so <a href="mailto:hello@wnstn.com">via email.</a>
+
