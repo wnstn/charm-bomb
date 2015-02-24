@@ -43,3 +43,4 @@ gulp.task('serve', ['sass'], function() {
 });
 
 gulp.task('default', ['serve']);
+gulp.task('buildall', ['sass', 'buildpage'])
